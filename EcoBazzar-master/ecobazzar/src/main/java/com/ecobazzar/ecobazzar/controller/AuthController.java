@@ -23,7 +23,7 @@ public class AuthController {
 		this.authService = authService;
 	}
 	
-	//testing // testing
+	//testing 
 	@PostMapping("/register")
 	public ResponseEntity<UserResponse> register(@Valid @RequestBody RegisterRequest register){
 		return ResponseEntity.ok(authService.register(register));
@@ -32,6 +32,8 @@ public class AuthController {
 	@PostMapping("/login")
 	public ResponseEntity<UserResponse> login(@Valid @RequestBody LoginRequest login){
 		return ResponseEntity.ok(authService.login(login));
+		
+		
 	}
 
 }
