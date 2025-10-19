@@ -1,5 +1,5 @@
 package com.ecobazzar.ecobazzar.dto;
-
+//user response
 public class UserResponse {
 	
 	private Long id;
